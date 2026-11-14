@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فحص المحتوى — Net32</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .vwrap { max-width: 1000px; margin: 0 auto; padding: 28px 20px 60px; }
+  .vhead { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:18px; }
+  .vhead h1 { margin:0; font-size:24px; }
+  .vhead .spacer { flex:1; }
+  .verdict { padding:14px 18px; border-radius:14px; font-weight:700; margin-bottom:18px; border:1px solid var(--line); }
+  .verdict.pass { background:var(--ok-soft); border-color:var(--ok); color:var(--ok); }
+  .verdict.fail { background:var(--danger-soft); border-color:var(--danger); color:var(--danger); }
+  .verdict small { display:block; font-weight:400; color:var(--muted); margin-top:3px; font-size:12.5px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:8px 10px; border-bottom:1px solid var(--line); text-align:start; }
+  th { color:var(--muted); font-weight:600; font-size:12px; }
+  td.num, th.num { text-align:center; font-family:var(--mono); direction:ltr; }
+  .ok { color:var(--ok); }
+  .bad { color:var(--danger); }
+  .warn { color:var(--warn); }
+  .issues { display:grid; gap:8px; margin-top:8px; }
+  .issue { padding:9px 12px; border-radius:9px; background:var(--card-2); border:1px solid var(--line); font-size:13px; }
+  .issue.err { border-color:color-mix(in srgb,var(--danger) 45%,var(--line)); }
+  .issue.wrn { border-color:color-mix(in srgb,var(--warn) 45%,var(--line)); }
+  .issue code { font-size:12px; }
+  .muted { color:var(--muted); }
+  .legend { display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px; color:var(--muted); margin:10px 0 18px; }
+</style>
+</head>
+<body>
+<div class="vwrap">
+  <div class="vhead">
+    <h1>فحص المحتوى</h1>
+    <span class="spacer"></span>
+    <a class="btn btn-sm" href="index.html">← التطبيق</a>
+    <button class="btn btn-sm btn-primary" type="button" onclick="location.reload()">إعادة الفحص</button>
+  </div>
+
+  <div id="verdict" class="verdict">جارٍ الفحص…</div>
+  <div class="legend">
+    <span>✓ صالح</span>
+    <span class="warn">⚠ تحذير (لا يمنع التشغيل)</span>
+    <span class="bad">✕ خطأ (يجب إصلاحه)</span>
+  </div>
+
+  <div id="summary"></div>
+  <div id="table"></div>
+  <div id="issues"></div>
+</div>
+
+<script src="content/unit0.js"></script>
+<script src="content/unit1.js"></script>
+<script src="content/unit2.js"></script>
+<script src="content/unit3.js"></script>
+<script src="content/unit4.js"></script>
+<script src="content/unit5.js"></script>
+<script src="content/unit6.js"></script>
+<script src="content/unit7.js"></script>
+<script src="content/unit8.js"></script>
+<script src="content/unit9.js"></script>
+<script src="validate.js"></script>
+</body>
+</html>

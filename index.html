@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Net32 — البنية التحتية للشبكات · Infrastructure Réseau</title>
+<meta name="description" content="Net32 — البنية التحتية للشبكات (Infrastructure Réseau): منهج IPv4 بالعربية من البت والثنائي إلى التقسيم وVLSM، مع دروس وتمارين ومؤقّت دراسة ومولّد تمارين.">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- معاينة الرابط عند المشاركة (واتساب/تلغرام/فيسبوك) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="Net32">
+<meta property="og:title" content="Net32 — البنية التحتية للشبكات · Infrastructure Réseau">
+<meta property="og:description" content="منهج IPv4 تفاعلي بالعربية: 10 وحدات · 65 درسًا · 317 تمرينًا — يعمل على الهاتف والحاسوب.">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark">⬡</span>
+    <span class="brand-text">
+      <strong id="brandName">Net32</strong>
+      <small id="brandSub">Infrastructure Réseau</small>
+    </span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="التنقل">
+    <a href="#/" data-nav="home">الرئيسية</a>
+    <a href="#/timer" data-nav="timer">المؤقّت</a>
+    <a href="#/generator" data-nav="generator">مولّد التمارين</a>
+    <a href="#/notebook" data-nav="notebook">دفتر الأخطاء<span class="badge" id="nbCount" hidden>0</span></a>
+    <a href="#/stats" data-nav="stats">الإحصائيات</a>
+    <a href="#/settings" data-nav="settings">الإعدادات</a>
+  </nav>
+
+  <div class="topbar-tools">
+    <a id="timerChip" class="timer-chip" href="#/timer" hidden>
+      <span class="pulse"></span><span data-t="time">15:00</span>
+    </a>
+    <button id="themeBtn" class="icon-btn" type="button" title="تبديل الوضع" aria-label="تبديل الوضع">🌙</button>
+  </div>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="foot">
+  <div class="foot-line">
+    <span id="footLine">Net32 — تطبيق محلي بلا إنترنت · 10 وحدات · IPv4 فقط</span>
+    <span class="foot-sep">·</span>
+    <a href="#/settings">البيانات محفوظة في متصفحك</a>
+  </div>
+  <div class="foot-credits" id="footCredits"></div>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+
+<noscript>
+  <p style="padding:2rem;text-align:center">هذا التطبيق يحتاج تشغيل JavaScript في المتصفح.</p>
+</noscript>
+
+<!-- المحتوى: ملفات عادية عبر <script> — تعمل على file:// بلا سيرفر -->
+<script src="content/unit0.js"></script>
+<script src="content/unit1.js"></script>
+<script src="content/unit2.js"></script>
+<script src="content/unit3.js"></script>
+<script src="content/unit4.js"></script>
+<script src="content/unit5.js"></script>
+<script src="content/unit6.js"></script>
+<script src="content/unit7.js"></script>
+<script src="content/unit8.js"></script>
+<script src="content/unit9.js"></script>
+
+<script src="branding.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
