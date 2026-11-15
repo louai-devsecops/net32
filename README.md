@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.jpg" width="96" alt="شعار Net32">
+<img src="assets/logo-round.png" width="96" alt="شعار Net32">
 
 # Net32 — أكاديمية IPv4
 
@@ -109,6 +109,7 @@ net32/
 ├── content/                # unit0.js … unit9.js
 ├── assets/
 │   ├── logo.jpg
+│   ├── logo-round.png
 │   └── social-preview.png
 ├── docs/screenshots/       # صور README
 ├── LICENSE                 # MIT (الكود)
