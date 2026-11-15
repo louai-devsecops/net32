@@ -1260,7 +1260,7 @@
       '<h2><span class="ico">ℹ️</span> عن التطبيق</h2>' +
       '<p style="margin:0;color:var(--muted);font-size:13.5px;line-height:1.9">' +
       esc(APP_NAME.ar) + ' — أكاديمية IPv4 · نسخة 1.0<br>' +
-      UNITS.length + ' وحدات · ' + TOTAL + ' درسًا · يعمل بلا سيرفر وبلا إنترنت.<br>' +
+      UNITS.length + ' وحدات · ' + TOTAL + ' درسًا · يعمل بلا سيرفر.<br>' +
       'المحتوى يغطي IPv4 فقط: OSI/TCP-IP، التقسيم، VLSM، العناوين الخاصة — بلا VLAN أو توجيه أو IPv6 (حاليًا).' +
       '</p>' +
       '<div class="about-brand">' +
