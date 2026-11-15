@@ -423,9 +423,15 @@
   }
 
   function setNav(name) {
+    var active = null;
     $$('#nav a').forEach(function (a) {
-      a.classList.toggle('active', a.dataset.nav === name);
+      var on = a.dataset.nav === name;
+      a.classList.toggle('active', on);
+      if (on) active = a;
     });
+    if (active && active.scrollIntoView) {
+      try { active.scrollIntoView({ block: 'nearest', inline: 'center' }); } catch (e) { /* تجاهل */ }
+    }
   }
 
   function renderNavBadges() {

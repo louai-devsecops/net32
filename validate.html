@@ -16,6 +16,13 @@
   .verdict small { display:block; font-weight:400; color:var(--muted); margin-top:3px; font-size:12.5px; }
   table { width:100%; border-collapse:collapse; font-size:13px; }
   th, td { padding:8px 10px; border-bottom:1px solid var(--line); text-align:start; }
+  .table-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .table-scroll table { min-width:560px; }
+  .table-scroll::-webkit-scrollbar { height:8px; }
+  .table-scroll::-webkit-scrollbar-thumb { background:var(--line); border-radius:8px; }
+  .table-scroll::-webkit-scrollbar-track { background:transparent; }
+  .scroll-hint { display:none; margin:0 0 10px; font-size:12.5px; }
+  @media (max-width:620px) { .scroll-hint { display:block; } }
   th { color:var(--muted); font-weight:600; font-size:12px; }
   td.num, th.num { text-align:center; font-family:var(--mono); direction:ltr; }
   .ok { color:var(--ok); }

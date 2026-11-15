@@ -192,10 +192,11 @@
   document.getElementById('table').innerHTML =
     '<div class="card" style="margin-bottom:18px">' +
     '<h2>التفصيل حسب الوحدة</h2>' +
-    '<table><thead><tr>' +
+    '<p class="muted scroll-hint">اسحب الجدول أفقيًا لعرض بقية الأعمدة ↔</p>' +
+    '<div class="table-scroll"><table><thead><tr>' +
     '<th class="num">#</th><th>العنوان</th><th class="num">دروس</th><th class="num">تمارين</th>' +
     '<th class="num">MCQ</th><th class="num">Input</th><th class="num">أخطاء</th><th class="num">تحذيرات</th>' +
-    '</tr></thead><tbody>' + rows + '</tbody></table>' +
+    '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
     '</div>';
 
   var issuesHtml = '';
