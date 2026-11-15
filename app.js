@@ -1477,7 +1477,7 @@
 
     var fl = $('#footLine');
     if (fl) {
-      fl.textContent = APP_NAME.ar + ' — تطبيق محلي بلا إنترنت · ' +
+      fl.textContent = APP_NAME.ar + ' — تطبيق محلي· ' +
         UNITS.length + ' وحدات · IPv4 فقط';
     }
   }
